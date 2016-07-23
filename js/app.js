@@ -8,15 +8,41 @@ Go get em!*/
 /*1.  Variables with a String as their value.
 Declare variables named yourName, neighborName, teacherName.  Console log each variable.*/
 
+var yourName = "Joshua";
+var neighborName = "Lee";
+var teacherName = "Vic";
+
+console.log(yourName);
+console.log(neighborName);
+console.log(teacherName);
+
 
 /*2. Variable with a Number as their value.
 Declare variables named numberOfFloorsBurjKhalifa, TokyoOlympicsYear.  Console log each variable.*/
 
+var numberOfFloorsBurjKhalifa = 3;
+var TokyoOlympicsYear = 7;
+
+console.log(numberOfFloorsBurjKhalifa);
+console.log(TokyoOlympicsYear);
+
 /*3. Variables with Boolean values
 Declare variables named lovesPrepClass, eatsDonuts, drinksGin.  Console log each variable.*/
 
+var lovesPrepClass = true;
+var eatsDonuts = true;
+var drinksGin = false;
+
+console.log(lovesPrepClass);
+console.log(eatsDonuts);
+console.log(drinksGin);
 /*4. Variable with Null values
 Declare variables named completedCodingChallenge, traveledToSpace.  Console log each variable*/
+var completedCodingChallenge = null;
+var traveledToSpace = null;
+
+console.log(completedCodingChallenge);
+console.log(traveledToSpace);
 
 /*5.  Variables with Array for its value.
 Declare a variable named japanPrefectures and assign the value of the names of 5 prefectures in Japan.
@@ -24,6 +50,10 @@ Console log the variable
 Console log the value at index 1.
 Console log the value at index 3.*/
 
+var japanPrefectures =["Building","Door", "Window", "Wall", "Kitchen"];
+
+console.log(japanPrefectures[1]);
+console.log(japanPrefectures[3]);
 
 /*6.  Variable with Array for its value.
 Declare a variable named planets and assign the value of each planet in our solar system, in the order of distance from the sun.  
@@ -31,9 +61,16 @@ Console log the variable
 Console log "Earth" using the index position
 Console log "Uranus" using the index position*/
 
+var planets = ["mercury", "venus", "Earth", "mars", "Jupiter", "Saturn", "Uranus", "Neptune", "Pluto"];
+console.log(planets[2]);
+console.log(planets[6]);
+
 /*7. Variables with Array for its value.
 Declare a variable named india and assign the value of 3 popular tourist attractions.  
 Console log the variable.*/
+
+var india = ["Budah", "Water", "curry"];
+console.log(india);
 
 /*8.  Declare a literal object named "hotel" with properties and values set to:
 
@@ -43,7 +80,13 @@ Console log the variable.*/
     checkIn => null
 
  console log the object*/
-
+var hotel = {
+    name:"Hilton", 
+    rooms:200,  
+    pool:true, 
+    checkIn:null
+  };
+console.log(hotel);
 /*9.  Declare a literal object named "car" with properties and values set to:
 
     make  => "BMW"
@@ -53,6 +96,15 @@ Console log the variable.*/
 
  console log the object*/
 
+ var car = {
+  make:"BMW",
+  model: "X5",
+  year: 2015,
+  doors: 4
+ };
+
+ console.log(car);
+
 /*10.  Declare a literal object named bigBox and set its value to be an empty object.
 
 Add a property named size and set it to a random number value between 0 and 50 (hint, use Math.something...)
@@ -60,6 +112,14 @@ Add a prperty named color and set it to any color.
 Add a property named contents and set it to be an empty array
 
 console log the object*/
+
+var bigBox = {};
+
+bigBox.size = 35;
+bigBox.color = "blue";
+bigBox.contents = [];
+
+console.log(bigBox);
 
 
 /*11.  Declare a literal object named "colorMeBadd" with properties and values set to:
@@ -76,6 +136,18 @@ console log the object*/
    isJapanese => true              
 
 console log the object */ 
+
+var colorMeBadd = {
+  iro: {
+    akai: "red",
+    aoi: "blue",
+    midori: "green",
+    shiroi: "white",
+    pinku: "pink",
+    murasaki: "purple"
+  },
+  isJapanese: true
+};
 
 /*For exercises #12 - 14, declare two variables, one named "dog" and the other named "cat".  Assign a number value for each variable.*/
 
