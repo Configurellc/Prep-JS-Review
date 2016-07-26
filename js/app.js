@@ -115,7 +115,7 @@ console log the object*/
 
 var bigBox = {};
 
-bigBox.size = 35;
+bigBox.size = Math.floor(Math.random()*50);
 bigBox.color = "blue";
 bigBox.contents = [];
 
@@ -149,12 +149,25 @@ var colorMeBadd = {
   isJapanese: true
 };
 
+console.log(colorMeBadd);
+
 /*For exercises #12 - 14, declare two variables, one named "dog" and the other named "cat".  Assign a number value for each variable.*/
 
 /*12.  Declare a function named add.
 This function will take two parameters and returns the result of adding two numbers together.
 Store this value in a variable named sum and console log this variable.*/
 
+var dog  = 8;
+var cat = 9;
+
+function add(par1, par2) {
+  return par1 + par2;
+
+}
+
+var sum = add(dog, cat);
+
+console.log(sum);
 /*13.  Declare a function named subtract. 
 This function will take two parameters and returns the result of subtracting two numbers together. 
 Store this value in a variable named difference and console log this variable.*/
@@ -166,6 +179,12 @@ Store this value in a variable named product and console log this variable.*/
 /*15.  Declare a function named dunkinDonuts.
 This function will access the value stored in the sum variable and uses this number to return the string "I eats X old fashioned donuts every morning to stay classy." X is the value stored in the sum variable.  Console log the result.  */ 
 
+function donkinDonuts(para) {
+  return "I eats" + sum + "old fashioned donuts every morning to stay classy";
+
+}
+
+console.log(donkinDonuts());
 /*16.  Declare a function named stayinClassy.
 This function will access the values store in the difference and product variables and uses these numbers to return the string "Yea, I drank X gallons of box wine and ate Y bags of Cheetos and still feel vibrant yo!"  X is the value stored at difference variable and Y is the value stored at product variable. Console.log the result.*/
 
@@ -180,9 +199,22 @@ Invoke this function by passing in the string values of "Slim", "Shady". and con
 
 i.e. "The locaton at 0 is Tokyo."*/
 
+for (var i = 0; i < japanPrefectures.length; i++) {
+  console.log("The location at "+[i]+"is:"+""+ "is"+ ''+ japanPrefectures[i]);
+}
+
 /*19. Declare a variable named "oddNumbers".
 Use a for loop to add only odd numbers to an Array.  Add 30 odd numbers to the oddNumbers variable starting with the value of 1.*/
 
+var oddNumbers = [];
+
+for (var i = 1; i <60; i++) {
+  if(i%2 === 1){
+    oddNumbers.push(i);
+  }
+}
+
+console.log(oddNumbers);
 /*20.  Declare a function named "oldEnough".
 This function takes in a number parameter age and returns a Boolean value true or false if the age is lower than the minimum legal drinking age in Antigua.
 
@@ -193,6 +225,17 @@ This function checks the value stored at the drinkinAlready variable in the prev
 
 /*22. Declare a function named contentFiller which takes in a single parameter which will be an object.  Write a for loop that will put 5 random numbers between the values of 0 to 20 in the contents array in the bigBox object you created in exercise 10.  Console log the result.*/
 
-/*23.  Declare a function named firstReverse which takes a single parameter str.  This function will take a string parameter being passed in and return the string in reverse order.*/
+/*23.  Declare a function named firstReverse which takes a single parameter str.  
+This function will take a string parameter being passed in and return the string in reverse order.*/
 
+function firstReverse(strg) {
+  var reverseString ="";
 
+  for (var i = strg.length-1; i>=0; i--) {
+    reverseString += strg[i];
+  }
+
+return reverseString;
+}
+
+console.log(firstReverse("dog"));
